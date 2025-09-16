@@ -1,0 +1,75 @@
+# Como hospedar o projeto no GitHub
+## Passo 1: Criar um repositório no GitHub
+1. 1.
+   Acesse GitHub e faça login na sua conta
+2. 2.
+   Clique no botão "+" no canto superior direito e selecione "New repository"
+3. 3.
+   Dê um nome ao repositório (por exemplo, "saas-ml-project")
+4. 4.
+   Escolha se o repositório será público ou privado
+5. 5.
+   Clique em "Create repository"
+## Passo 2: Configurar o Git no seu projeto local
+Abra um terminal no diretório do seu projeto e execute:
+
+```
+git init
+git add .
+git commit -m "Commit inicial"
+git branch -M main
+git remote add origin https://github.
+com/seu-usuario/saas-ml-project.git
+git push -u origin main
+```
+Substitua "seu-usuario" pelo seu nome de usuário do GitHub e "saas-ml-project" pelo nome que você deu ao repositório.
+
+## Passo 3: Instruções para quem for clonar e executar o projeto
+Adicione estas instruções ao seu README.md:
+```
+# SaaS ML Project
+## Requisitos
+- Docker e Docker Compose
+- Node.js (para desenvolvimento local)
+- Python (para desenvolvimento local)
+
+## Como executar
+1. Clone o repositório:
+```
+git clone https://github.com/seu-usuario/saas-ml-project.git cd saas-ml-project
+
+```
+
+2. Inicie os containers com Docker 
+Compose:
+```
+docker-compose up -d
+
+3. Acesse a aplicação:
+- Frontend: http://localhost:3000
+- Backend API: http://localhost:5000
+- Serviço de análise: http://
+localhost:8000
+
+## Desenvolvimento local
+### Frontend
+```
+cd frontend
+npm install
+npm start
+
+```
+
+### Backend
+```
+cd backend
+npm install
+npm start
+
+```
+
+### Serviço de análise
+```
+cd analysis
+pip install -r requirements.txt
+python main.py
