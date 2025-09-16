@@ -151,9 +151,3 @@ H) Próximos passos recomendados
 - Implementar cache (Redis) para resultados de pesquisa e limitar chamadas às APIs externas.
 - Implementar testes automatizados (unit tests + integração).
 - Criar pipeline CI/CD (GitHub Actions / GitLab CI).
-
-----
-Arquivo gerado automaticamente por ChatGPT. Se quiser, eu posso:
-- Gerar um arquivo .zip / .rar atualizado que contenha este Instructions.txt (e já inclui os Dockerfiles criados).
-- Executar verificações básicas (ex.: checar se docker compose up conseguirá buildar as imagens com os Dockerfiles).
-
